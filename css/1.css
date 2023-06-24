@@ -16,7 +16,7 @@ input {
 	background-color:#8d8787;
 	padding:3px;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:10px;
+	font-size:20px;
 	color:#746c6c;
 	border:1px solid #000000;
 	background-color:#000000;
@@ -26,7 +26,7 @@ input[type=submit] {
 	background-color:#665c5c;
 	padding:3px;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:10px;
+	font-size:20px;
 	color:#000000;
 	border:1px solid #000000;
 	margin-bottom:2px;
@@ -65,9 +65,9 @@ li {
 	background-image:url(../images/backgrounds/menu.jpg);
 }
 #menu a {
-	color:#FFFFFF;
+	color:#000000;
 	text-decoration:none;
-	padding:10px;
+	padding:30px;
 	padding-top:20px;
 	padding-bottom:20px;
 	
@@ -113,7 +113,7 @@ li {
 }
 
 #content {
-	width:1020px;
+	width:650px;
 	margin:0 auto 0 auto;
 	text-align:left;
 }
