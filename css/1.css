@@ -79,37 +79,37 @@ li {
 	padding-top:20px;
 	padding-bottom:20px;
 	background-color:#334218;
-	margin-bottom:50px;
+	margin-bottom:0px;
 	color:#706868;
 	text-align:center;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:13px;
+	font-size:20px;
 	font-variant:small-caps;
 	background-image:url(../images/backgrounds/menu.jpg);
 }
 #menu a {
 	color:#000000;
 	text-decoration:none;
-	padding:30px;
+	padding:40px;
 	padding-top:20px;
 	padding-bottom:20px;
 	
 }
 #menu a:hover {
-	border-bottom:1px solid #ffffff;
+	border-bottom:0px solid #ffffff;
 	border-left:1px solid #728d40;
 	border-right:1px solid #e9ffb7;
 	padding-left:9px;</right>
-	padding-right:9px;
+	padding-right:0px;
 	color:#000000;
 	background-color:#FFFFFF;
 	background-image:url(../images/backgrounds/a_hover.jpg);
 }
 
 #header {
-	width:350px;
+	width:1000px;
 	margin:0 auto 0 auto;
-	margin-bottom:40px;
+	margin-bottom:0px;
 }
 #header h1 {
 	font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
@@ -126,7 +126,7 @@ li {
 #header h2 {
 	font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
 	font-size:20px;
-	text-transform:uppercase;
+	text-transform:none;
 	text-align:right;
 	font-weight:normal;
 	margin:0;
