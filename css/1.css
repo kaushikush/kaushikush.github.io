@@ -91,16 +91,16 @@ li {
 	color:#000000;
 	text-decoration:none;
 	padding:40px;
-	padding-top:20px;
-	padding-bottom:20px;
+	padding-top:10px;
+	padding-bottom:10px;
 	
 }
 #menu a:hover {
-	border-bottom:1px solid #ffffff;
-	border-left:1px solid #728d40;
-	border-right:1px solid #e9ffb7;
-	padding-left:9px;</right>
-	padding-right:9px;
+	border-bottom:10px solid #ffffff;
+	border-left:10px solid #728d40;
+	border-right:10px solid #e9ffb7;
+	padding-left:10px;</right>
+	padding-right:10px;
 	color:#000000;
 	background-color:#FFFFFF;
 	background-image:url(../images/backgrounds/a_hover.jpg);
@@ -109,7 +109,7 @@ li {
 #header {
 	width:1000px;
 	margin:auto auto auto auto;
-	margin-bottom:5px;
+	margin-bottom:10px;
 }
 #header h1 {
 	font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
