@@ -1,17 +1,40 @@
 /* CSS Document */
 
+
+
 body {
 	margin:0;
+	padding: 0;
 	font-family:"Trebuchet MS", Arial, Verdana;
 	font-size:0.74em;
 	color:#000000;
 	background: color #c7c7c7;;
 	text-align:left;
 }
+#
 img.rounded-corners {
-	border-radius: 50%;
+	border-radius: 0%;
   }
 
+  #header {
+    width: 200%; /* Ensure the header takes full width */
+ /* Prevent overflow */
+}
+
+.full-width {
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space caused by inline-block */
+}
+
+#header img {
+    width: 100vw; /* Set to 100% of viewport width */
+    height: 100vh; /* Set to 100% of viewport height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    position: relative; /* Positioning context */
+    left: 50%; /* Shift to the right */
+    transform: translateX(-50%); /* Center it */
+}
 input {
 	background-color:#8d8787;
 	padding:3px;
@@ -76,7 +99,7 @@ li {
 	border-bottom:1px solid #ffffff;
 	border-left:1px solid #728d40;
 	border-right:1px solid #e9ffb7;
-	padding-left:9px;
+	padding-left:9px;</right>
 	padding-right:9px;
 	color:#000000;
 	background-color:#FFFFFF;

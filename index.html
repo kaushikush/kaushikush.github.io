@@ -9,33 +9,95 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>My Website</title>
 <link href="css/1.css" rel="stylesheet" type="text/css" />
+<style>
+	* {
+	  box-sizing: border-box;
+	}
+	
+	/* Create two unequal columns that floats next to each other */
+	.column {
+	  float: left;
+	  padding: 0px;
+	  height: 300px; /* Should be removed. Only for demonstration */
+	}
+	
+	.left {
+    width: calc(35% - 20px); /* Adjust width to account for spacing */
+    margin-right: 0px; /* Add margin for space between columns */
+}
+	.left2{
+	  width: 35%;
+	}
+	
+	.right {
+	  width: 65%;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	</style>
 </head>
-
 <body>
-<a name="top" id="top"></a>
-<center>
+	
+<left>
+	
 		<div id="menu">
-				<a href="#top">Home</a> <a href="#intro">Research</a> <a href="#pub">Publications</a> <a href="#things">Not Physics</a>
+				<a href="#top">Home</a> <a href="#intro">Research</a> <a href="#pub">Publications</a> <a href="#things">Connect</a>
 		</div>
 		
 		<div id="header">
 				
-				<h1><center>About Me</center></h1>
+			 	<h3><right>Hey there, welcome to Kaushik's page.</right></h3>
+
+			
 				
-				<h2><center> <p><i>"I'm smart enough to know that I'm DUMB" ~ Richard Feynman </i></p></center> </h2>
+			<!--	<h2><right> <p><i>"I'm smart enough to know that I'm DUMB" ~ Richard Feynman </i></p></right> </h2>-->
 				
 				
 		</div>
-		
-		<div id="content">
+		<!-- <h2>Two Unequal Columns</h2> -->
 
-				<center>
-				<img src="images/pic3.jpeg" width="400" height="400" alt="Your Logo" class="rounded-corners" />
-				</center>
+<div class="row">
+  <div class="column left" style="background-color:#ffffff;">
+    <left>
+		<img src="images/pic3.jpeg" width="300" height="300" alt="Your Logo" class="rounded-corners" />
+		</left>
+  </div>
+  <div class="column right" style="background-color:#ffffff;">
+    <h2>About Me</h2>
+    <p>I'm Kaushik Paul from Shyamnagar - a suburban place 31 kilometers from Kolkata. 
+		I did my schooling at Mulajore Sitanath Pathsala (10th) and Shyamnagar Kanti Chandra High School (10+2).
+		 I graduated with honours in Physics from <a href="https://www.vidyasagarcollege.edu.in/">Vidyasagar College</a> 
+		 (affiliated with the <a href="https://www.caluniv.ac.in/">University of Calcutta</a>) in 2016. Subsequently,
+		  I joined the <a href="https://visvabharati.ac.in/Physics.html">Department of Physics</a>, 
+		  <a href="https://visvabharati.ac.in/index.html">Visva-Bharati</a>, for my Master's in Physics, which I 
+		  completed in 2018. Since 2019, I have been a Ph.D. student at the Centre for Strings, Gravitation, and Cosmology,
+		   <a href="https://physics.iitm.ac.in/">Department of Physics</a>, <a href="https://www.iitm.ac.in/">Indian In
+			stitute of Technology Madras</a>.</p>
+  </div>
+</div>
+		
+<!--		<div id="content">
+
+				<left>
+				<img src="images/pic3.jpeg" width="300" height="300" alt="Your Logo" class="rounded-corners" />
+				</left>
 				
 				<p class="introduction">
-					Hello, I'm Kaushik Paul from Shyamnagar - a suburban place 31 kilometers from Kolkata. I did my schooling at Mulajore Sitanath Pathsala (10th) and Shyamnagar Kanti Chandra High School (10+2). I graduated with honours in Physics from <a href="https://www.vidyasagarcollege.edu.in/">Vidyasagar College</a> (affiliated with the <a href="https://www.caluniv.ac.in/">University of Calcutta</a>) in 2016. Subsequently, I joined the <a href="https://visvabharati.ac.in/Physics.html">Department of Physics</a>, <a href="https://visvabharati.ac.in/index.html">Visva-Bharati</a>, for my Master's in Physics, which I completed in 2018. Since 2019, I have been a Ph.D. student at the Centre for Strings, Gravitation, and Cosmology, <a href="https://physics.iitm.ac.in/">Department of Physics</a>, <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>. 
-				</p>
+					Hello, I'm Kaushik Paul from Shyamnagar - a suburban place 31 kilometers from Kolkata. 
+					I did my schooling at Mulajore Sitanath Pathsala (10th) and Shyamnagar Kanti Chandra High School (10+2).
+					 I graduated with honours in Physics from <a href="https://www.vidyasagarcollege.edu.in/">Vidyasagar College</a> 
+					 (affiliated with the <a href="https://www.caluniv.ac.in/">University of Calcutta</a>) in 2016. Subsequently,
+					  I joined the <a href="https://visvabharati.ac.in/Physics.html">Department of Physics</a>, 
+					  <a href="https://visvabharati.ac.in/index.html">Visva-Bharati</a>, for my Master's in Physics, which I 
+					  completed in 2018. Since 2019, I have been a Ph.D. student at the Centre for Strings, Gravitation, and Cosmology,
+					   <a href="https://physics.iitm.ac.in/">Department of Physics</a>, <a href="https://www.iitm.ac.in/">Indian In
+						stitute of Technology Madras</a>. 
+				</p> -->
 				
 				<!-- <div id="sidebar">
 						<h1>Sub Menu</h1>
@@ -90,7 +152,8 @@
 						
 							<li>"ESIGMAHM: An Eccentric, Spinning inspiral-merger-ringdown waveform model with Higher Modes for the detection and 
 							characterization of binary black holes", K. Paul, A. Maurya, Q. Henry, K. Sharma, P. Satheesh,
-							Divyajyoti, P. Kumar, C. K. Mishra, (Submitted to Phys. Rev. D),</a> arXiv:<a href="https://arxiv.org/abs/2409.13866v1">2409.13866</a></li>
+							Divyajyoti, P. Kumar, C. K. Mishra, (Submitted to Phys. Rev. D),
+						</a> arXiv:<a href="https://arxiv.org/abs/2409.13866v1">2409.13866</a></li>
 						
 					</ol>
 						<ul>
@@ -101,14 +164,13 @@
 								
 						</p>
 						
-						<h1><a name="things" id="things"></a>Not Physics</h1>
+						<h1><a name="things" id="things"></a>Connect</h1>
+					<p>	<a href="mailto:kush@physics.iitm.ac.in">Send Email</a> </p>
+					<p>	<a href="https://www.linkedin.com/in/kaushik-paul-51b59821b/">LinkedIn</a></p>
+					<p>	<a href="https://github.com/kaushikush">Github</a></p>
 						
 						
-						
-						<p>
-							(Updating soon)
-							
-						</p>
+					
 						
 						<p>
 								
@@ -121,6 +183,6 @@
   </div>
   <div id="footer">
   Last updated on October 2024 </div>
-</center>
+  </left>
 </body>
 </html>
