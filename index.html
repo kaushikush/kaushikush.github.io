@@ -46,7 +46,7 @@
 <left>
 	
 		<div id="menu">
-				<a href="#top">Home</a> <a href="#intro">Research</a> <a href="#pub">Publications</a> <a href="#things">Connect</a>
+				<a href="index.html">Home</a> <a href="research.html">Research</a> <a href="pub.html">Publications</a> <a href="connect.html">Connect</a>
 		</div>
 		
 		<div id="header">
@@ -77,6 +77,12 @@
 		  <a href="https://visvabharati.ac.in/index.html">Visva-Bharati</a>, for my Master's in Physics, which I 
 		  completed in 2018. Since 2019, I have been a Ph.D. student at the Centre for Strings, Gravitation, and Cosmology,
 		   <a href="https://physics.iitm.ac.in/">Department of Physics</a>, <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>.</h2>
+
+		   <ul>
+			
+
+			</ul>
+	<h2><a href="https://drive.google.com/file/d/1SsIWqjF6TqXYyCGPEev3luZmSWQoI8jc/view?usp=sharing">CV</a></h2>
   </div>
 </div>
 		
@@ -129,126 +135,9 @@
 					<input type="button" value="Log In" /> -->
 				</div>
 				
-				<div id="mainbar">
-						<h1><a name="intro" id="intro"></a>Research</h1>
-						
-						<!-- <img src="images/backgrounds/menu.jpg" alt="AN EXAMPLE IMAGE" title="AN EXAMPLE IMAGE" class="articleimg" /> -->
-						<ul>
-							<li><h2> M.Sc.</h2> </li>
-						
-						<p>
-							During my M.Sc., I worked on "The Halo Model Of The Large Scale Structures Of The Universe" under the 
-							supervision of <a href="https://visvabharati.irins.org/profile/151672">Dr. Biswajit Pandey</a>. 
-							In this project, I reviewed the Halo Model that divides all the masses of the Universe into distinct 
-							chunks called Halos. I learned about large-scale structure formations and various approximations used
-							 to explain their formations. I calculated the probability of Halos lying between specific mass ranges
-							  using the NFW (Navarro-Frenk-White) profile. 	
-						</p>
-
-						<li><h2> Ph.D.</h2> </li>
-					<ul>
-                                                                <li><h3>Past projects</h3></li>
-
-						<p>
-						In the early stage of my Ph.D., my research focused on computing the aligned-spin 
-						effects in spherical harmonic mode amplitudes of the gravitational waveform for eccentric 
-						inspirals using <a href="https://arxiv.org/abs/1310.1528">post-Newtonian multipolar post-Minkowskian (PN-MPM)</a> formalism.</p>
+				
 
 						
- <p>It is well known that compact binaries tend to circularize when they enter the ground-based detector frequency 
-	band. However, binaries formed via dynamical interactions in dense stellar clusters or through Kozai-Lidov processes 
-  can have large residual eccentricities.  Besides, orbital eccentricity is the cleanest feature to know about 
-  binary formation channels.
-The effect of the orbital eccentricity and spins of binary constituents are substantial on the gravitational 
-waveform; neglecting it results in a low signal-to-noise ratio (SNR) while detecting a likely spinning eccentric
- candidate. Though the effect of eccentricity are explored separately, a combined treatment including spins and 
- eccentricity is largely absent. Hence, it's very important to compute these effects on the gravitational waveform 
- to understand the spinning eccentric inspirals.</p>
-
-<p>The computation of spin effects in spherical harmonic modes of the gravitational waveform for eccentric inspirals 
-involves source multipole moments and equations of motion of the system. The source multipole moments characterize 
-the system properties and are functions of relative separation, relative velocity, and spins of 
-the binary constituents. Taking source multipole moments and equations of motion as inputs, we compute spin 
-effects in spherical harmonic modes valid for generic orbits within PN-MPM formalism. Next, we use generalized 
-quasi-Keplerian representation to specialize these modes to elliptical 
-orbits. I completed this project with my Ph.D. supervisor <a href="https://physics.iitm.ac.in/faculty-inner.php?fuid=40">Dr. Chandra Kant Mishra</a> and it is now published and can be found in arXiv:<a href="https://arxiv.org/abs/2211.04155">2211.04155</a>.
-</p>
-
-<p>Next, my focus was to use the analytical expressions derived in arXiv:<a href="https://arxiv.org/abs/2211.04155">2211.04155</a> and build a 
-ready-to-use waveform model that includes effects due to spin, eccentricity and high-order modes for 
-the detection of eccentric binary black hole mergers (BBHs).
-The waveform models like SpinTaylorT4, IMRPhenomXHM, IMRPhenomXPHM and 
-SEOBNRv4, SEOBNRv4HM, SEOBNRv5 include the spin effects and EccentricTD, 
-EccentricFD, TaylorF2Ecc (with quasi-circular spins) include eccentricity effects separately; 
-however, a full IMR reviewed waveform model that incorporates all these effects simultaneously, is absent. In collaboration with <a href="https://www.icts.res.in/people/prayush-kumar">Dr. Prayush Kumar</a> <a href="https://www.icts.res.in/">(ICTS-TIFR)</a>,
-we presented ESIGMAHM: a time-domain, spinning eccentric IMR waveform model with higher-order modes for 
-the detection and characterization of eccentric BBH mergers in arXiv:<a href="https://arxiv.org/abs/2409.13866v1">2409.13866</a>.
-</p>
-<li><h3>Ongoing and future projects</h3></li>
-                                               
-
-<p>I'm also involved in another project where we compute the spinning eccentric corrections in GW phase up to 
-3PN order in small eccentricity limit. We obtain these corrections in various Taylor approximants: 
-TaylorT1, TaylorT2, TaylorT3, TaylorT4, and TaylorF2.
- We have imeplemented the eccentricity expanded up to 2nd order in eccentricity spinning corrections in TaylorF2
-  phase in <a href="https://lscsoft.docs.ligo.org/lalsuite/lalsuite/index.html">LALSuite</a> with the approximant name SpinTaylorF2Ecc. </p>
-
-<p>Currently, we are trying to improve the accuracy of ESIGMAHM model across the whole parameter space of mass ratio up to 6, dimensionless spins between (-0.9, 0.9), eccentricity up to 0.4 by adding <b><a href="https://arxiv.org/abs/1805.10385">Self-force</a></b> (SF) corrections into the ESIGMA framework. It is well established that in high mass ratio regime Self-force results correctly describes the true dynamics of BBH mergers even if the gravitational field is strong, where PN theory breaks down. ESIGMAHM already had SF corrections in the radiation reaction sector for quasi-circular non-spinning binaries up to 6PN order. We found that including SF corrections improves the match values between ESIGMAHM and NR simulations significantly. As a first step towards this, we will be incorporating the circular spinning SF results in the framework and compare that version of ESIGMAHM with NR simulations. Eventually, our goal is to incorporate spinning eccentric SF corrections in the framework to improve the spinning eccentric sector of our model. </p>
-
-						</ul>	
-
-						</ul> 
-
-						<h1><a name="pub" id="pub"></a>Publications</h1>
-					    <h2>
-						<ul>						
-						
-							<li>"Spin effects in Spherical Harmonic Modes of Gravitational Waves from Eccentric Compact Binary Inspirals", K. Paul, C. K. Mishra, <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.024023">Phys. Rev. D 108, 024023</a>, arXiv:<a href="https://arxiv.org/abs/2211.04155">2211.04155</a></li>
-						
-							</ul>
-							<ul>
-						
-							<li>"ESIGMAHM: An Eccentric, Spinning inspiral-merger-ringdown waveform model with Higher Modes for the detection and 
-							characterization of binary black holes", K. Paul, A. Maurya, Q. Henry, K. Sharma, P. Satheesh,
-							Divyajyoti, P. Kumar, C. K. Mishra, (Submitted to Phys. Rev. D),
-						</a> arXiv:<a href="https://arxiv.org/abs/2409.13866v1">2409.13866</a></li>
-						
-					</ul>
-					</h2>
-						<ul>
-								
-						</ul>
-
-						<p>
-								
-						</p>
-						
-						<h1><a name="things" id="things"></a>Connect</h1>
-					
-					
-
-						
-						
-						<div class="row">
-							<div class="column left" style="background-color:#ffffff;">
-								<p>	<a href="mailto:kush@physics.iitm.ac.in">Send Email</a> </p>
-					<p>	<a href="https://www.linkedin.com/in/kaushik-paul-51b59821b/">LinkedIn</a></p>
-					<p>	<a href="https://github.com/kaushikush">Github</a></p>
-							  
-							</div>
-							<div class="column right" style="background-color:#ffffff;">
-								<p><a href="https://scholar.google.com/citations?user=shyE86UAAAAJ&hl=en">Google Scholar</p>
-									<p><a href="https://inspirehep.net/authors/2678695?ui-citation-summary=true&ui-exclude-self-citations=true">Inspire HEP</p>
-							</div>
-						  </div>
-						
-						<p>
-								
-						</p>
-						
-						
-						
-		  </div>
 		
   </div>
 </left>
