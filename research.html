@@ -103,15 +103,16 @@ however, a full IMR reviewed waveform model that incorporates all these effects 
 we presented ESIGMAHM: a time-domain, spinning eccentric IMR waveform model with higher-order modes for 
 the detection and characterization of eccentric BBH mergers in arXiv:<a href="https://arxiv.org/abs/2409.13866v1">2409.13866</a>.</big>
 </p>
+
+<p><big>I also contributed to a project where we computed the spinning eccentric corrections in GW phase up to 
+  3PN order in small eccentricity limit. We obtained these corrections in various Taylor approximants: 
+  TaylorT1, TaylorT2, TaylorT3, TaylorT4, and TaylorF2.
+  We have implemented the eccentricity expanded (up to 2nd order in eccentricity) spinning corrections up to 3PN in TaylorF2
+  phase in <a href="https://lscsoft.docs.ligo.org/lalsuite/lalsuite/index.html">LALSuite</a> with the approximant name SpinTaylorF2Ecc. The preprint of this work can be found at
+  arXiv:<a href="https://arxiv.org/abs/2412.10909">2412.10909</a> </big></p>
+  
 <li><h3>Ongoing and future projects</h3></li>
                            
-
-<p><big>I'm also involved in another project where we compute the spinning eccentric corrections in GW phase up to 
-3PN order in small eccentricity limit. We obtain these corrections in various Taylor approximants: 
-TaylorT1, TaylorT2, TaylorT3, TaylorT4, and TaylorF2.
-We have imeplemented the eccentricity expanded up to 2nd order in eccentricity spinning corrections in TaylorF2
-phase in <a href="https://lscsoft.docs.ligo.org/lalsuite/lalsuite/index.html">LALSuite</a> with the approximant name SpinTaylorF2Ecc. </big></p>
-
 <p><big>Currently, we are trying to improve the accuracy of ESIGMAHM model across the whole parameter space of mass ratio up to 6, 
     dimensionless spins between (-0.9, 0.9), eccentricity up to 0.4 by adding <b><a href="https://arxiv.org/abs/1805.10385">Self-force</a></b> 
     (SF) corrections into the ESIGMA framework. It is well established that in high mass ratio regime Self-force results correctly describes 
