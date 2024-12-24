@@ -208,7 +208,7 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image {
-  flex: 1 1 5rem;
+  flex: 1 1 2rem;
   z-index: 1;
 }
 .home .image img {
