@@ -1,149 +1,553 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-
-<!-- Web Page Design by James Koster - http://www.jameskoster.co.uk -->
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>My Website</title>
-<link href="css/1.css" rel="stylesheet" type="text/css" />
-<style>
-	* {
-	  box-sizing: border-box;
-	}
-	
-	/* Create two unequal columns that floats next to each other */
-	.column {
-	  float: left;
-	  padding: 0px;
-	  height: 300px; /* Should be removed. Only for demonstration */
-	}
-	
-	.left {
-    width: calc(35% - 20px); /* Adjust width to account for spacing */
-    margin-right: 0px; /* Add margin for space between columns */
-}
-	.left2{
-	  width: 35%;
-	}
-	
-	.right {
-	  width: 65%;
-	}
-	
-	/* Clear floats after the columns */
-	.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Kaushik Paul, portfolio, Kaushik, Physics, personal portfolio, gravitational waves, modeling, LIGO, researcher" />
+    <meta name="description" content="Welcome to Kaushik's Portfolio. A Physics Enthusiast." />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/KP2.png" type="image/x-png">
+    <title>Portfolio | Kaushik Paul</title>
 </head>
-<body>
-	
-<left>
-	
-		<div id="menu">
-				<a href="index.html">Home</a> <a href="research.html">Research</a> <a href="pub.html">Publications</a> <a href="connect.html">Connect</a>
-		</div>
-		
-		<div id="header">
-				
-			<!--	<h3><right>Hey there, welcome to Kaushik's page.</right></h3>--> 
+<body oncontextmenu="return false">
 
-			
-			
-				<h2><center> <p><i>"I'm smart enough to know that I'm dumb" ~ Richard Feynman </i></p></center> </h2>
-				
-			<!--	<img src="images/gw1.webp" width="100" height="10" alt="Your Logo" class="rounded-corners" />-->
-		</div>
-		<!-- <h2>Two Unequal Columns</h2> -->
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
 
-<div class="row">
-  <div class="column left" style="background-color:#ffffff;">
-    <left>
-		<img src="images/pic3.jpeg" width="300" height="300" alt="Your Logo" class="rounded-corners" />
-		</left>
-  </div>
-  <div class="column right" style="background-color:#ffffff;">
-    <h1>About Me</h1>
-    <h2>Hey there, thanks for visiting my website. I'm Kaushik Paul from Shyamnagar - a suburban place 31 kilometers from Kolkata, India. 
-		I did my schooling at Mulajore Sitanath Pathsala (10th) and Shyamnagar Kanti Chandra High School (10+2).
-		 I graduated with honours in Physics from <a href="https://www.vidyasagarcollege.edu.in/">Vidyasagar College</a> 
-		 (affiliated with the <a href="https://www.caluniv.ac.in/">University of Calcutta</a>) in 2016. Subsequently,
-		  I joined the <a href="https://visvabharati.ac.in/Physics.html">Department of Physics</a>, 
-		  <a href="https://visvabharati.ac.in/index.html">Visva-Bharati</a>, for my Master's in Physics, which I 
-		  completed in 2018. Since 2019, I have been a Ph.D. student at the Centre for Strings, Gravitation, and Cosmology,
-		   <a href="https://physics.iitm.ac.in/">Department of Physics</a>, <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>.</h2>
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-react"></i> Kaushik</a>
 
-		   <ul>
-			
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+	    <!-- <li><a href="#work">Work</a></li> -->
+          <!--  <li><a href="#experience">Experience</a></li>-->
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
 
-			</ul>
-	<h2><a href="https://drive.google.com/file/d/1SZgD47MD9uQ22AhCeXgJhsnpTAE9wimo/view?usp=sharing">CV</a></h2>
-  </div>
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hello, <br/> I'm Kaushik <span>Paul</span></h2>
+    <p>My research interests are <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/kaushik-paul-51b59821b/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/kaushikush" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://x.com/Kaushik_gw" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <a href="https://scholar.google.com/citations?hl=en&user=shyE86UAAAAJ" class="fas fa-graduation-cap" aria-label="GoogleScholar" target="_blank"></a>
+              <a href="https://inspirehep.net/authors/2678695" class="	fa fa-info-circle" aria-label="InspireHEP" target="_blank"></a>
+        <!--  <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/fig3.jpg" alt="">
 </div>
-		
-<!--		<div id="content">
+</section>
+<!-- hero section ends -->
 
-				<left>
-				<img src="images/pic3.jpeg" width="300" height="300" alt="Your Logo" class="rounded-corners" />
-				</left>
-				
-				<p class="introduction">
-					Hello, I'm Kaushik Paul from Shyamnagar - a suburban place 31 kilometers from Kolkata. 
-					I did my schooling at Mulajore Sitanath Pathsala (10th) and Shyamnagar Kanti Chandra High School (10+2).
-					 I graduated with honours in Physics from <a href="https://www.vidyasagarcollege.edu.in/">Vidyasagar College</a> 
-					 (affiliated with the <a href="https://www.caluniv.ac.in/">University of Calcutta</a>) in 2016. Subsequently,
-					  I joined the <a href="https://visvabharati.ac.in/Physics.html">Department of Physics</a>, 
-					  <a href="https://visvabharati.ac.in/index.html">Visva-Bharati</a>, for my Master's in Physics, which I 
-					  completed in 2018. Since 2019, I have been a Ph.D. student at the Centre for Strings, Gravitation, and Cosmology,
-					   <a href="https://physics.iitm.ac.in/">Department of Physics</a>, <a href="https://www.iitm.ac.in/">Indian In
-						stitute of Technology Madras</a>. 
-				</p> -->
-				
-				<!-- <div id="sidebar">
-						<h1>Sub Menu</h1>
-						<div class="submenu">
-								<a href="#top">Home</a>				  
-								<a href="#intro">Introduction</a>				
-								<a href="#css">CSS &amp; XHTML</a>				
-								<a href="#about">About</a>				 
-						</div>
-				 -->
-				<!-- <h1>Other </h1>
-				
-				
-					<div class="submenu">
-								<a href="http://xij.p0wned.org/prettyasapicture/templates.php#Stepping%20Stone">Stepping Stone</a>				  
-								<a href="http://xij.p0wned.org/prettyasapicture/templates.php#Go%20Faster%20Red">Go Faster Red</a>				
-								<a href="http://xij.p0wned.org/prettyasapicture/templates.php#Seaside">Seaside</a>				
-								<a href="http://xij.p0wned.org/prettyasapicture/templates.php#Light%201.0">Light</a>				 
-					</div>
-					
-					<p>
-							You can view more of my templates on my Templates Website: <a href="http://xij.p0wned.org/prettyasapicture/">Pretty as a Picture</a>					
-					</p>
-					 -->
-					<!-- <h1>Log In</h1>
-					<input type="text" value="Username" />
-					<br />
-					<input name="" type="password" value="Password" />
-					<br />
-					<input type="button" value="Log In" /> -->
-				</div>
-				
-				
 
-						
-		
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/fig1.jpg" alt="">
+    </div>
+    <div class="content">
+        <p>Hey there, thanks for visiting my website. I'm Kaushik Paul from Shyamnagar - a suburban place 31 kilometers from Kolkata, India. 
+          I did my schooling at Mulajore Sitanath Pathsala (10th) and Shyamnagar Kanti Chandra High School (10+2).
+           I graduated with honours in Physics from <a href="https://www.vidyasagarcollege.edu.in/">Vidyasagar College</a> 
+           (affiliated with the <a href="https://www.caluniv.ac.in/">University of Calcutta</a>) in 2016. Subsequently,
+            I joined the <a href="https://visvabharati.ac.in/Physics.html">Department of Physics</a>, 
+            <a href="https://visvabharati.ac.in/index.html">Visva-Bharati</a>, for my Master's in Physics, which I 
+            completed in 2018. Since 2019, I have been a Ph.D. student at the Centre for Strings, Gravitation, and Cosmology,
+             <a href="https://physics.iitm.ac.in/">Department of Physics</a>, <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>.</p>
+        <span class="tag">Early Career Scientist</span>
+        
+       <!-- <p>I am a Full-Stack developer based in Pune, India. 
+          I am an Information Technology undergraduate from SPPU.
+          I am very passionate about improving my coding skills & developing applications & websites.
+          I build WebApps and Websites using MERN Stack.
+          Working for myself to improve my skills.
+          Love to build Full-Stack clones. </p> -->
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> kpaul.gw@gmail.com</p>
+              <p><span> place : </span> Chennai, India - 600036</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1SZgD47MD9uQ22AhCeXgJhsnpTAE9wimo/view?usp=sharing" target="_blank" class="btn"><span>CV</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">"I'm smart enough to know that I'm dumb." - Richard Feynman</p>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/IITMadras.jpg" alt="">
+        </div>
+        <div class="content">
+        <h3>PhD in Physics</h3>
+        <p>Indian Institute of Technology Madras</p>
+        <h4>2019-present | pursuing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/visva.jpg" alt="">
+        </div>
+        <div class="content">
+        <h3>Master of Science in Physics</h3>
+        <p>Visva-Bharati</p>
+        <h4>2016-2018 | Completed</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/vidyasagar.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>Bachelor of Science (Honours) in Physics</h3>
+      <p>Vidyasagar College | University of Calcutta</p>
+      <h4>2013-2016 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+<!--fas fa-graduation-cap-->
+
+<!-- skills section starts -->
+ 
+<section class="research" id="research">
+
+   <h2 class="heading"><i class="fas fa-laptop-code"></i> Research </span></h2>
+
+    <ul>
+      <li><h2> M.Sc.</h2> </li>
+      <br/>
+  <p>
+      <big> During my M.Sc., I worked on "The Halo Model Of The Large Scale Structures Of The Universe" under the 
+      supervision of <a href="https://visvabharati.irins.org/profile/151672">Dr. Biswajit Pandey</a>. 
+      In this project, I reviewed the Halo Model that divides all the masses of the Universe into distinct 
+      chunks called Halos. I learned about large-scale structure formations and various approximations used
+       to explain their formations. I calculated the probability of Halos lying between specific mass ranges
+        using the NFW (Navarro-Frenk-White) profile. 	</big>
+  </p> <br/>
+
+  <li><h2> Ph.D.</h2> </li>
+  <br/>
+<ul>
+                                          <li><h3>Past projects</h3></li><br/>
+
+  <p>
+  <big>In the early stage of my Ph.D., my research focused on computing the aligned-spin 
+  effects in spherical harmonic mode amplitudes of the gravitational waveform for eccentric 
+  inspirals using <a href="https://arxiv.org/abs/1310.1528">post-Newtonian multipolar post-Minkowskian (PN-MPM)</a> formalism.</big></p>
+
+  
+<p><big>It is well known that compact binaries tend to circularize when they enter the ground-based detector frequency 
+band. However, binaries formed via dynamical interactions in dense stellar clusters or through Kozai-Lidov processes 
+can have large residual eccentricities.  Besides, orbital eccentricity is the cleanest feature to know about 
+binary formation channels.
+The effect of the orbital eccentricity and spins of binary constituents are substantial on the gravitational 
+waveform; neglecting it results in a low signal-to-noise ratio (SNR) while detecting a likely spinning eccentric
+candidate. Though the effect of eccentricity are explored separately, a combined treatment including spins and 
+eccentricity is largely absent. Hence, it's very important to compute these effects on the gravitational waveform 
+to understand the spinning eccentric inspirals.</big></p>
+
+<p><big>The computation of spin effects in spherical harmonic modes of the gravitational waveform for eccentric inspirals 
+involves source multipole moments and equations of motion of the system. The source multipole moments characterize 
+the system properties and are functions of relative separation, relative velocity, and spins of 
+the binary constituents. Taking source multipole moments and equations of motion as inputs, we compute spin 
+effects in spherical harmonic modes valid for generic orbits within PN-MPM formalism. Next, we use generalized 
+quasi-Keplerian representation to specialize these modes to elliptical 
+orbits. I completed this project with my Ph.D. supervisor <a href="https://physics.iitm.ac.in/faculty-inner.php?fuid=40">Dr. Chandra Kant Mishra</a> 
+and it is now published and can be found in arXiv:<a href="https://arxiv.org/abs/2211.04155">2211.04155</a>.</big>
+</p>
+
+<p><big>Next, my focus was to use the analytical expressions derived in arXiv:<a href="https://arxiv.org/abs/2211.04155">2211.04155</a> and build a 
+ready-to-use waveform model that includes effects due to spin, eccentricity and high-order modes for 
+the detection of eccentric binary black hole mergers (BBHs).
+The waveform models like SpinTaylorT4, IMRPhenomXHM, IMRPhenomXPHM and 
+SEOBNRv4, SEOBNRv4HM, SEOBNRv5 include the spin effects and EccentricTD, 
+EccentricFD, TaylorF2Ecc (with quasi-circular spins) include eccentricity effects separately; 
+however, a full IMR reviewed waveform model that incorporates all these effects simultaneously, is absent. In collaboration with <a href="https://www.icts.res.in/people/prayush-kumar">Dr. Prayush Kumar</a> <a href="https://www.icts.res.in/">(ICTS-TIFR)</a>,
+we presented ESIGMAHM: a time-domain, spinning eccentric IMR waveform model with higher-order modes for 
+the detection and characterization of eccentric BBH mergers in arXiv:<a href="https://arxiv.org/abs/2409.13866v1">2409.13866</a>.</big>
+</p>
+
+<p><big>I also contributed to a project where we computed the spinning eccentric corrections in GW phase up to 
+3PN order in small eccentricity limit. We obtained these corrections in various Taylor approximants: 
+TaylorT1, TaylorT2, TaylorT3, TaylorT4, and TaylorF2.
+We have implemented the eccentricity expanded (up to 2nd order in eccentricity) spinning corrections up to 3PN in TaylorF2
+phase in <a href="https://lscsoft.docs.ligo.org/lalsuite/lalsuite/index.html">LALSuite</a> with the approximant name SpinTaylorF2Ecc. The preprint of this work can be found at
+arXiv:<a href="https://arxiv.org/abs/2412.10909">2412.10909</a>. </big></p><br/>
+
+<li><h3>Ongoing and future projects</h3></li><br/>
+                         
+<p><big>Currently, we are trying to improve the accuracy of ESIGMAHM model across the whole parameter space of mass ratio up to 6, 
+  dimensionless spins between (-0.9, 0.9), eccentricity up to 0.4 by adding <b><a href="https://arxiv.org/abs/1805.10385">Self-force</a></b> 
+  (SF) corrections into the ESIGMA framework. It is well established that in high mass ratio regime Self-force results correctly describes 
+  the true dynamics of BBH mergers even if the gravitational field is strong, where PN theory breaks down. ESIGMAHM already had SF corrections 
+  in the radiation reaction sector for quasi-circular non-spinning binaries up to 6PN order. We found that including SF corrections improves
+   the match values between ESIGMAHM and NR simulations significantly. As a first step towards this, we will be incorporating the circular 
+   spinning SF results in the framework and compare that version of ESIGMAHM with NR simulations. Eventually, our goal is to incorporate spinning 
+   eccentric SF corrections in the framework to improve the spinning eccentric sector of our model. </big></p>
+
+  </ul>	
+
+  </ul> 
+
+    
+   <!--<div class="container">
+    <div class="row" id="skillsContainer">
+            <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+    <!--  </div>
+</div>-->
+</section>
+<!-- skills section ends -->
+
+<section class="publications" id="publications">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Publications </span></h2>
+  <!--<h1><a name="pub" id="pub"></a>Publications (in reverse chronological order)</h1> -->
+
+  <h2> As primary author </h2>
+      
+      <ul>		
+          <li><big><i>"ESIGMAHM: An Eccentric, Spinning inspiral-merger-ringdown waveform model with Higher Modes for the detection and 
+              characterization of binary black holes"</i>, <b>K. Paul</b>, A. Maurya, Q. Henry, K. Sharma, P. Satheesh,
+              Divyajyoti, P. Kumar, C. K. Mishra, (Submitted to Phys. Rev. D),
+          </a> arXiv:<a href="https://arxiv.org/abs/2409.13866v1">2409.13866</a>.</big></li>	
+      </ul>
+      <ul>			
+      
+          <li><big><i>"Spin effects in Spherical Harmonic Modes of Gravitational Waves from Eccentric Compact Binary Inspirals"</i>, <b>K. Paul</b>, 
+              C. K. Mishra, <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.024023">Phys. Rev. D 108, 024023</a>, 
+              arXiv:<a href="https://arxiv.org/abs/2211.04155">2211.04155</a>.</big></li>
+      
+      
+  </ul>
+
+<h2> As corresponding author </h2>
+
+<ul>		
+  <li><big><i>"Spin effects in the phasing formula of eccentric compact binary inspirals till the third post-Newtonian order"</i>,
+    O. Sridhar, S. Bhattacharyya, <b>K. Paul</b>, C. K. Mishra, (Submitted to Phys. Rev. D),
+  </a> arXiv:<a href="https://arxiv.org/abs/2412.10909">2412.10909</a>.</big></li>	
+</ul>
+
+
+<!--<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FzggTpySRBG97MGuCi&noBootstrap=1&jsonp=1"></script> -->
+
+</section>
+
+<!-- work project section starts -->
+<!--<section class="work" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">-->
+
+    <!-- <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+</div>
+
+<div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+</section> 
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+ <!--
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Self Employed</h2>
+        </div>
+        <div class="desc">
+            <h3>Full Stack Developer</h3>
+            <p>Oct 2021 - present</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Mapstreak Flyseas</h2>
+        </div>
+        <div class="desc">
+            <h3>Web Developer | Internship</h3>
+            <p>June 2021 - Dec 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>The Spark Foundation</h2>
+        </div>
+        <div class="desc">
+            <h3>Website Developer | Internship</h3>
+            <p>May 2021 - June 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>The Spark Foundation</h2>
+        </div>
+        <div class="desc">
+            <h3>Mobile Application Developer | Internship</h3>
+            <p>April 2021 - May 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Frshr Technologies</h2>
+        </div>
+        <div class="desc">
+            <h3>Wordpress Developer | Internship</h3>
+            <p>April 2021 - April 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>WonderingBlog</h2>
+        </div>
+        <div class="desc">
+            <h3>Web Development & SEO | Internship</h3>
+            <p>March 2021 - April 2021</p>
+        </div>
+      </div>
+    </div>
   </div>
-</left>
-  <center>
-  <div id="footer">
-  Last updated on December 2024 </div>
-  </center>
+
+  <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</div>
+
+</section> -->
+<!-- experience section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Kaushik's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials or via email.</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <!--  <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>-->
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#research"><i class="fas fa-chevron-circle-right"></i> Research</a>
+          <a href="#publications"><i class="fas fa-chevron-circle-right"></i> Publications</a>
+          <!--<a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a> -->
+          <!--<a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>-->
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+        <!--  <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p> -->
+          <p> <i class="fas fa-envelope"></i>kpaul.gw@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Chennai, India-600036</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/kaushik-paul-51b59821b" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/kaushikush" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:kpaul.gw@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://twitter.com/Kaushik_gw" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://scholar.google.com/citations?hl=en&user=shyE86UAAAAJ" class="fas fa-graduation-cap" aria-label="GoogleScholar" target="_blank"></a>
+              <a href="https://inspirehep.net/authors/2678695" class="	fa fa-info-circle" aria-label="InspireHEP" target="_blank"></a>
+            <!--  <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a> -->
+          </div>
+      </div>
+  </div>
+  
+  <!--<h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1>-->
+
+  <h1 class="credit">Thanks to <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a> for the template <br />Last updated on December 2024</h1>
+  
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
 </body>
 </html>
